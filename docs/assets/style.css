@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap");
 html {
-  height: 100vh;
+  /* height: 100vh; */
 }
 body {
   background-image: url("bg.png");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .container {
   display: flex;
@@ -23,7 +25,7 @@ body {
   width: 350px;
 }
 .text-container {
-  padding: 10px 20px;
+  padding: 5px 10px;
   border: 2px solid #a37857;
   margin: 10px;
   text-align: center;
@@ -37,7 +39,7 @@ body {
   font-family: "Caveat", cursive;
   font-size: 2.5em;
   color: #6d6d6d;
-  margin: 1em 0;
+  margin: 0.3em 0;
 }
 .text-container a {
   text-decoration: none;
@@ -47,8 +49,47 @@ body {
 .sub {
   color: #6d6d6d;
 }
+.row {
+  display: flex;
+}
 @media only screen and (max-width: 768px) {
   .container {
-    margin: 25% auto;
+    margin: 15% auto;
+    width: auto;
   }
+}
+
+/* meter */
+#chartdiv,
+#chartdiv2,
+.chart-container {
+  width: 100%;
+  height: 350px;
+  background-color: #fff;
+  margin: auto;
+}
+.chart-container .row {
+  justify-content: space-around;
+  padding: 1em 0 2em 0;
+  background-color: #fff;
+}
+.chart-container button {
+  outline: none;
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+}
+.chart-container button:hover {
+  background-color: #454545;
+}
+.chart-container tspan {
+  font-size: 2em;
+}
+.chart-container h3 {
+  text-align: center;
+}
+.amcharts-chart-div a {
+  display: none !important;
 }
