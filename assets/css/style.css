@@ -863,7 +863,7 @@ section {
   font-size: 24px;
 }
 
-.services .icon-box h4 a {
+.services .icon-box a {
   color: #37517e;
   transition: ease-in-out 0.3s;
 }
@@ -878,7 +878,7 @@ section {
   transform: translateY(-10px);
 }
 
-.services .icon-box:hover h4 a {
+.services .icon-box:hover h4 {
   color: #47b2e4;
 }
 
@@ -886,20 +886,18 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)),
-    url("../img/cta-bg.jpg") fixed center center;
   background-size: cover;
   padding: 120px 0;
 }
 
 .cta h3 {
-  color: #fff;
+  color: #000;
   font-size: 28px;
   font-weight: 700;
 }
 
 .cta p {
-  color: #fff;
+  color: #000;
 }
 
 .cta .cta-btn {
@@ -913,7 +911,7 @@ section {
   transition: 0.5s;
   margin: 10px;
   border: 2px solid #fff;
-  color: #fff;
+  color: #000;
 }
 
 .cta .cta-btn:hover {
@@ -931,7 +929,7 @@ section {
   .cta .cta-btn-container {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
   }
 }
 
