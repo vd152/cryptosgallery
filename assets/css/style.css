@@ -1,11 +1,3 @@
-/**
-* Template Name: Arsha
-* Updated: Mar 10 2023 with Bootstrap v5.2.3
-* Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -1830,4 +1822,64 @@ section {
 
 .text-justify {
   text-align: justify !important;
+}
+.market-container {
+  margin: auto;
+  width: fit-content;
+}
+.market-container .box {
+  width: 100%;
+  padding: 10px 0;
+}
+
+.market-container .box h2 {
+  display: block;
+  text-align: center;
+  color: #000;
+}
+
+.market-container .box .chart {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 40px;
+  line-height: 160px;
+  height: 160px;
+  color: #000;
+}
+
+.market-container .box canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  width: 100%;
+}
+.market-container p {
+  font-weight: 600;
+  font-size: 1.3em;
+  margin-top: 2em;
+}
+
+.carousel {
+  width: 60%;
+  margin: auto;
+}
+.carousel-inner {
+  width: 80%;
+  margin: auto;
+}
+.carousel-indicators {
+  bottom: -8%;
+}
+.carousel-control-next,
+.carousel-control-prev {
+  width: 10%;
+}
+@media (max-width: 768px) {
+  .carousel {
+    width: 100%;
+    margin: auto;
+  }
 }

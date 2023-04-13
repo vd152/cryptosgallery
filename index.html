@@ -4,13 +4,13 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>Arsha Bootstrap Template - Index</title>
+    <title>CryptosGallery</title>
     <meta content="" name="description" />
     <meta content="" name="keywords" />
 
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon" />
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link href="assets/img/logo.png" rel="icon" />
+    <link href="assets/img/logo.png" rel="apple-touch-icon" />
 
     <!-- Google Fonts -->
     <link
@@ -38,15 +38,18 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
 
   <body>
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top">
       <div class="container d-flex align-items-center">
-        <h1 class="logo me-auto"><a href="index.html">Crypto</a></h1>
+        <!-- <h1 class="logo me-auto"><a href="index.html">Crypto</a></h1> -->
         <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        <a href="index.html" class="logo me-auto"
+          ><img src="assets/img/logo.png" alt="" class="img-fluid"
+        /></a>
 
         <nav id="navbar" class="navbar">
           <ul>
@@ -54,14 +57,17 @@
             <li>
               <a class="nav-link scrollto" href="#market">Market Sentiment</a>
             </li>
-            <li><a class="nav-link scrollto" href="#services">Reviews</a></li>
             <li>
               <a class="nav-link scrollto" href="#bitcoin">Bitcoin Analysis</a>
             </li>
+            <li><a class="nav-link scrollto" href="#reviews">Reviews</a></li>
+
             <li>
               <a class="nav-link scrollto" href="#premium">Join Premium</a>
             </li>
             <li><a class="nav-link scrollto" href="#footer">Newsletter</a></li>
+            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+
             <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
@@ -165,9 +171,31 @@
             <h2>Market Sentiment</h2>
           </div>
 
-          <div class="row content justify-content-center">
-            <div class="col-lg-6 text-justify">
-              <p></p>
+          <div class="row content justify-content-center align-items-center">
+            <div class="col-12 text-justify">
+              <div class="market-container">
+                <div class="box">
+                  <div
+                    class="chart chart1"
+                    data-percent="45"
+                    data-scale-color="#aa0e0e"
+                  >
+                    45%
+                  </div>
+                  <p>Long term: <span style="color: #bc3814">Bearish</span></p>
+                </div>
+
+                <div class="box">
+                  <div
+                    class="chart chart2"
+                    data-percent="70"
+                    data-scale-color="#ffb400"
+                  >
+                    70%
+                  </div>
+                  <p>Short term: <span style="color: #14bc44">Bullish</span></p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -225,10 +253,291 @@
               </div>
             </div>
           </div>
+          <div class="row justify-content-center my-3" id="show-more-btn">
+            <div class="col-12 text-center">
+              <p><button class="btn" onclick="showDiv()">Show More</button></p>
+            </div>
+          </div>
+          <div class="row mt-4" id="show-more" style="display: none">
+            <div
+              class="col-xl-4 col-md-6 d-flex align-items-stretch"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div class="icon-box">
+                <h4>Nov 22, 2022</h4>
+                <p>
+                  Bitcoin took the Liquidity from the downside (15.6k),
+                  bottom/temp botton is in.
+                </p>
+                <p class="my-2"><a href="">Show more →</a></p>
+              </div>
+            </div>
+
+            <div
+              class="col-xl-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <div class="icon-box">
+                <h4>Mar 28, 2021</h4>
+                <p>
+                  Bitcoin is forming Bear flag pattern at 48k level, Target 23k
+                </p>
+                <p class="my-2"><a href="">Show more →</a></p>
+              </div>
+            </div>
+
+            <div
+              class="col-xl-4 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              <div class="icon-box">
+                <h4>Dec 28, 2021</h4>
+                <p>
+                  Bitcoin is forming Bear flag pattern at 50k level, Target:
+                  below 30k
+                </p>
+                <p class="my-2"><a href="">Show more →</a></p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <!-- End Services Section -->
-
+      <section id="reviews" class="about">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Reviews</h2>
+          </div>
+        </div>
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide carousel-dark"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="4"
+              aria-label="Slide 5"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="5"
+              aria-label="Slide 6"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="6"
+              aria-label="Slide 7"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="7"
+              aria-label="Slide 8"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="8"
+              aria-label="Slide 9"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="9"
+              aria-label="Slide 10"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="10"
+              aria-label="Slide 11"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="11"
+              aria-label="Slide 12"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="12"
+              aria-label="Slide 13"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="13"
+              aria-label="Slide 14"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="14"
+              aria-label="Slide 15"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="/assets/img/reviews/1.jpg"
+                class="d-block w-100"
+                alt="review"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/assets/img/reviews/2.jpg"
+                class="d-block w-100"
+                alt="review"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/assets/img/reviews/3.jpg"
+                class="d-block w-100"
+                alt="review"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/assets/img/reviews/4.jpg"
+                class="d-block w-100"
+                alt="review"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/assets/img/reviews/5.jpg"
+                class="d-block w-100"
+                alt="review"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/assets/img/reviews/6.jpg"
+                class="d-block w-100"
+                alt="review"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/assets/img/reviews/7.jpg"
+                class="d-block w-100"
+                alt="review"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/assets/img/reviews/8.jpg"
+                class="d-block w-100"
+                alt="review"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/assets/img/reviews/9.jpg"
+                class="d-block w-100"
+                alt="review"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/assets/img/reviews/10.jpg"
+                class="d-block w-100"
+                alt="review"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/assets/img/reviews/11.jpg"
+                class="d-block w-100"
+                alt="review"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/assets/img/reviews/12.jpg"
+                class="d-block w-100"
+                alt="review"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/assets/img/reviews/13.jpg"
+                class="d-block w-100"
+                alt="review"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/assets/img/reviews/14.jpg"
+                class="d-block w-100"
+                alt="review"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/assets/img/reviews/15.jpg"
+                class="d-block w-100"
+                alt="review"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
       <!-- ======= Cta Section ======= -->
       <section id="premium" class="cta">
         <div class="container" data-aos="zoom-in">
@@ -342,7 +651,35 @@
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js"></script>
+    <script>
+      $(function () {
+        $(".chart1").easyPieChart({
+          size: 180,
+          barColor: "#bc3814",
+          scaleLength: 0,
+          lineWidth: 15,
+          trackColor: "#373737",
+          lineCap: "circle",
+          animate: 2000,
+        });
+        $(".chart2").easyPieChart({
+          size: 180,
+          barColor: "#14bc44",
+          scaleLength: 0,
+          lineWidth: 15,
+          trackColor: "#373737",
+          lineCap: "circle",
+          animate: 2000,
+        });
+      });
+    </script>
+    <script>
+      function showDiv() {
+        document.getElementById("show-more").style.display = "flex";
+        document.getElementById("show-more-btn").style.display = "none";
+      }
+    </script>
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
