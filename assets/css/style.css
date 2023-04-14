@@ -383,7 +383,7 @@ h6 {
 }
 
 #hero .container {
-  padding-top: 72px;
+  padding-top: 12px;
 }
 
 #hero h1 {
@@ -1881,5 +1881,36 @@ section {
   .carousel {
     width: 100%;
     margin: auto;
+  }
+}
+
+.marquee {
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: 1rem;
+}
+
+.marquee__content {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  /* min-width: 100%; */
+  gap: 1rem;
+  animation: scroll 5s linear infinite;
+  color: #fff;
+}
+.marquee-row {
+  width: 150vw;
+  margin-left: -10%;
+  margin-top: -5%;
+  background-color: rgb(149, 149, 149);
+}
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100%));
   }
 }
