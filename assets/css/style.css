@@ -1943,3 +1943,13 @@ section {
     transform: translateX(calc(-100%));
   }
 }
+.why-us p {
+  padding-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .why-us p {
+    font-size: 1.2rem;
+  }
+}
