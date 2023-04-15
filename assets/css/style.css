@@ -1901,11 +1901,40 @@ section {
   color: #fff;
 }
 .marquee-row {
-  width: 150vw;
-  margin-left: -10%;
-  margin-top: -5%;
+  width: 200vw;
+  margin-left: -25%;
+  margin-top: 1rem;
   background-color: rgb(149, 149, 149);
 }
+#header.header-scrolled .marquee-row {
+  display: none;
+}
+/* @media (max-width: 1200px) {
+  .marquee-row {
+    width: 200vw;
+    margin-top: -5%;
+  }
+}
+@media (max-width: 991px) {
+  .marquee-row {
+    margin-top: -20%;
+  }
+}
+@media (max-width: 768px) {
+  .marquee-row {
+    margin-top: -20%;
+  }
+}
+@media (max-width: 460px) {
+  .marquee-row {
+    margin-top: -30%;
+  }
+}
+@media (max-width: 380px) {
+  .marquee-row {
+    margin-top: -75%;
+  }
+} */
 @keyframes scroll {
   from {
     transform: translateX(0);
