@@ -531,9 +531,9 @@ section {
 }
 
 .section-title h2 {
-  font-size: 32px;
+  font-size: 52px;
   font-weight: bold;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
@@ -591,11 +591,17 @@ section {
   .clients img {
     max-width: 40%;
   }
+  .section-title h2 {
+    font-size: 32px;
+  }
 }
 
 /*--------------------------------------------------------------
 # About Us
 --------------------------------------------------------------*/
+.about {
+  background: #f3f5fa;
+}
 .about .content h3 {
   font-weight: 600;
   font-size: 26px;
@@ -627,6 +633,7 @@ section {
 .about .content p:last-child {
   margin-bottom: 0;
   font-size: 1.3rem;
+  font-weight: 300;
 }
 
 .about .content .btn-learn-more {
@@ -649,7 +656,12 @@ section {
   color: #fff;
   text-decoration: none;
 }
-
+.about-bg {
+  background: #fff;
+  -webkit-box-shadow: 9px 20px 30px 7px #37517e1d;
+  -moz-box-shadow: 9px 20px 30px 7px #37517e1d;
+  box-shadow: 9px 20px 30px 7px #37517e1d;
+}
 /*--------------------------------------------------------------
 # Why Us
 --------------------------------------------------------------*/
@@ -1847,7 +1859,7 @@ section {
   height: 100%;
   text-align: center;
   font-size: 40px;
-  line-height: 160px;
+  line-height: 185px;
   height: 160px;
   color: #000;
 }
@@ -1949,6 +1961,7 @@ section {
 .why-us p {
   padding-bottom: 2rem;
   font-size: 1.5rem;
+  font-weight: 300;
 }
 
 @media (max-width: 768px) {
@@ -1958,7 +1971,8 @@ section {
 }
 #premium,
 #why-us {
-  background: #f3f5fa;
+  /* background: #f3f5fa; */
+  background: #fff;
 }
 #premium h3 {
   font-size: 2.5rem;
