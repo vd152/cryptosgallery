@@ -103,13 +103,16 @@ h6 {
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
+  background: rgba(20, 20, 20, 1);
 }
 
 #header.header-scrolled,
 #header.header-inner-pages {
-  background: rgba(40, 58, 90, 0.9);
+  background: rgba(20, 20, 20, 0.8);
 }
-
+#header.header-scrolled {
+  padding-bottom: 15px !important;
+}
 #header .logo {
   font-size: 30px;
   margin: 0;
@@ -537,9 +540,9 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #37517e;
+  color: #000;
 }
-
+/* 
 .section-title h2::before {
   content: "";
   position: absolute;
@@ -549,18 +552,18 @@ section {
   background: #ddd;
   bottom: 1px;
   left: calc(50% - 60px);
-}
+} */
 
-.section-title h2::after {
+/* .section-title h2::after {
   content: "";
   position: absolute;
   display: block;
   width: 40px;
   height: 3px;
-  background: #47b2e4;
+  background: #000;
   bottom: 0;
   left: calc(50% - 20px);
-}
+} */
 
 .section-title p {
   margin-bottom: 0;
@@ -600,12 +603,20 @@ section {
 # About Us
 --------------------------------------------------------------*/
 .about {
-  background: #f3f5fa;
+  background: rgb(0, 0, 0);
 }
 #about {
-  -webkit-box-shadow: inset 0px -50px 30px 7px #37517e1d;
+  /* -webkit-box-shadow: inset 0px -50px 30px 7px #37517e1d;
   -moz-box-shadow: inset 0px -50px 30px 7px #37517e1d;
-  box-shadow: inset 0px -50px 30px 7px #37517e1d;
+  box-shadow: inset 0px -50px 30px 7px #37517e1d; */
+  background-image: -webkit-linear-gradient(
+    top,
+    rgb(204, 204, 204),
+    rgb(119, 119, 119)
+  );
+}
+.about .container {
+  max-width: 900px;
 }
 .about .content h3 {
   font-weight: 600;
@@ -856,6 +867,9 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+.services {
+  background-color: rgb(115, 115, 115);
+}
 .services .icon-box {
   box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
   padding: 50px 30px;
@@ -916,7 +930,7 @@ section {
   color: #000;
 }
 
-.cta .cta-btn {
+.cta-btn {
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -1652,15 +1666,16 @@ section {
 --------------------------------------------------------------*/
 #footer {
   font-size: 14px;
-  background: #37517e;
+  background: #000;
 }
 
 #footer .footer-newsletter {
-  padding: 50px 0;
+  padding: 150px 0;
   background: #fff;
   text-align: center;
   font-size: 15px;
-  color: #444444;
+  color: #000;
+  background: #ffc375;
 }
 
 #footer .footer-newsletter h4 {
@@ -1669,7 +1684,7 @@ section {
   padding: 0;
   line-height: 1;
   font-weight: 600;
-  color: #37517e;
+  color: #000;
 }
 
 #footer .footer-newsletter form {
@@ -1684,7 +1699,7 @@ section {
 
 #footer .footer-newsletter form input[type="email"] {
   border: 0;
-  padding: 4px 8px;
+  padding: 8px 8px;
   width: calc(100% - 100px);
 }
 
@@ -1697,7 +1712,7 @@ section {
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: #47b2e4;
+  background: #000;
   color: #fff;
   transition: 0.3s;
   border-radius: 50px;
@@ -1705,13 +1720,20 @@ section {
 }
 
 #footer .footer-newsletter form input[type="submit"]:hover {
-  background: #209dd8;
+  background: #000000a9;
 }
 
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  background: #f3f5fa;
+  background: rgba(20, 20, 20, 1);
+  color: #fff;
 }
+#footer .section-title h2 {
+  color: #fff;
+}
+/* #footer .section-title h2:after {
+  background: #fff;
+} */
 
 #footer .footer-top .footer-contact {
   margin-bottom: 30px;
@@ -1849,11 +1871,12 @@ section {
   text-align: justify !important;
 }
 .market {
-  background: #f3f5fa;
+  background: rgb(115, 115, 115);
 }
 .market-container {
   margin: auto;
   width: fit-content;
+  color: #000;
 }
 .market-container .box {
   width: 100%;
@@ -1872,7 +1895,7 @@ section {
   height: 100%;
   text-align: center;
   font-size: 40px;
-  line-height: 185px;
+  line-height: 175px;
   height: 170px;
   color: #000;
   margin: auto;
@@ -1991,15 +2014,25 @@ section {
     font-size: 1.2rem;
   }
 }
-#premium,
+.premium {
+  background: #efefef;
+}
 #why-us {
   /* background: #f3f5fa; */
   background: #fff;
 }
-#premium h3 {
+.premium h3 {
   font-size: 2.7rem;
 }
-#premium p {
+.premium .cta-btn {
+  background-color: #1f5bff;
+  border: none;
+  color: #fff;
+}
+.premium .cta-btn:hover {
+  background-color: #1f5bffbf;
+}
+.premium p {
   margin: auto;
   max-width: 600px;
   line-height: 1.5;
@@ -2017,8 +2050,16 @@ section {
   height: 60vh;
 }
 .bitcoin-overlay {
-  background-image: -webkit-linear-gradient(top, #37517edc, #37517ed3);
-  background-image: linear-gradient(top, #37517edc, #37517ed3);
+  background-image: -webkit-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.7)
+  );
+  background-image: linear-gradient(
+    top,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.7)
+  );
   height: 60vh;
   position: absolute;
   top: 0;
@@ -2040,10 +2081,10 @@ section {
   .bitcoin-centered {
     font-size: 60px;
   }
-  #premium h3 {
+  .premium h3 {
     font-size: 2rem;
   }
-  #premium p {
+  .premium p {
     font-size: 1.3rem;
   }
 }
@@ -2056,4 +2097,15 @@ section {
   top: 0;
   bottom: 0;
   padding: 3px;
+}
+.show-more {
+  background-color: #222222;
+  color: #fff;
+  border-radius: 0;
+  padding: 8px 30px;
+  font-size: 0.8rem;
+}
+.show-more:hover {
+  background-color: #22222298;
+  color: #fff;
 }

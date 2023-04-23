@@ -45,7 +45,7 @@
 
   <body>
     <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top">
+    <header id="header" class="fixed-top pb-0">
       <div class="container d-flex align-items-center">
         <!-- <h1 class="logo me-auto"><a href="index.html">Crypto</a></h1> -->
         <!-- Uncomment below if you prefer to use an image logo -->
@@ -171,7 +171,7 @@
             </div>
 
             <div class="row content justify-content-center">
-              <div class="col-lg-7 text-center">
+              <div class="col-lg-9 text-center">
                 <p>
                   We are a crypto trading consultancy and we specialize is
                   technical and fundamental analysis of latest trends & market
@@ -340,7 +340,7 @@
         </div>
       </section>
       <!-- ======= Services Section ======= -->
-      <section id="bitcoin" class="services section-bg pt-0">
+      <section id="bitcoin" class="services pt-0">
         <div class="bitcoin-container">
           <!-- <img
             src="/assets/img/bitcoin-bg.jpeg"
@@ -404,7 +404,11 @@
           </div>
           <div class="row justify-content-center my-3" id="show-more-btn">
             <div class="col-12 text-center">
-              <p><button class="btn" onclick="showDiv()">Show More</button></p>
+              <p class="mb-0 mt-4">
+                <button class="btn show-more" onclick="showDiv()">
+                  Show More
+                </button>
+              </p>
             </div>
           </div>
           <div class="row mt-4" id="show-more" style="display: none">
@@ -688,7 +692,7 @@
         </div>
       </section>
       <!-- ======= Cta Section ======= -->
-      <section id="premium" class="cta">
+      <section id="premium" class="premium">
         <div class="container" data-aos="zoom-in">
           <div class="row">
             <div class="col-12 text-center">
@@ -724,10 +728,10 @@
       <div class="footer-newsletter">
         <div class="container">
           <div class="row justify-content-center">
-            <div class="col-lg-12">
+            <div class="col-lg-12 py-3">
               <h4>Be the first to know our weekly news!</h4>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 pb-3">
               <p>
                 Once a week you will hear about our latest features and hottest
                 news. And no spam, of course.
@@ -821,20 +825,20 @@
     <script>
       $(function () {
         $(".chart1").easyPieChart({
-          size: 180,
+          size: 170,
           barColor: "#bc3814",
           scaleLength: 0,
           lineWidth: 15,
-          trackColor: "#373737",
+          trackColor: "#fff",
           lineCap: "circle",
           animate: 2000,
         });
         $(".chart2").easyPieChart({
-          size: 180,
+          size: 170,
           barColor: "#14bc44",
           scaleLength: 0,
           lineWidth: 15,
-          trackColor: "#373737",
+          trackColor: "#fff",
           lineCap: "circle",
           animate: 2000,
         });
