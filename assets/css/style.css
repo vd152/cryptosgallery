@@ -73,7 +73,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #47b2e4;
+  background: #fff;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -82,12 +82,12 @@ h6 {
 
 .back-to-top i {
   font-size: 24px;
-  color: #fff;
+  color: #000;
   line-height: 0;
 }
 
 .back-to-top:hover {
-  background: #6bc1e9;
+  background: #c9c9c9;
   color: #fff;
 }
 
@@ -297,7 +297,7 @@ h6 {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(40, 58, 90, 0.9);
+  background: rgba(0, 0, 0, 0.6);
   transition: 0.3s;
   z-index: 999;
 }
@@ -326,19 +326,19 @@ h6 {
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #37517e;
+  color: #000;
 }
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover > a {
-  color: #47b2e4;
+  color: #444444;
 }
 
 .navbar-mobile .getstarted,
 .navbar-mobile .getstarted:focus {
   margin: 15px;
-  color: #37517e;
+  color: #000;
 }
 
 .navbar-mobile .dropdown ul {
@@ -894,7 +894,7 @@ section {
 }
 
 .services .icon-box a {
-  color: #37517e;
+  color: #ff8562;
   transition: ease-in-out 0.3s;
 }
 
@@ -909,7 +909,7 @@ section {
 }
 
 .services .icon-box:hover h4 {
-  color: #47b2e4;
+  color: #ff8562;
 }
 
 /*--------------------------------------------------------------
@@ -1608,6 +1608,17 @@ section {
 .contact .php-email-form button[type="submit"]:hover {
   background: #209dd8;
 }
+.contact .container p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  width: 60%;
+  margin: auto;
+}
+.contact .container span {
+  font-size: 0.8rem;
+  font-weight: 300;
+  line-height: 1.55;
+}
 
 @keyframes animate-loading {
   0% {
@@ -1804,23 +1815,22 @@ section {
 }
 
 #footer .footer-top .social-links a {
-  font-size: 18px;
+  font-size: 48px;
   display: inline-block;
-  background: #47b2e4;
-  color: #fff;
+  background: #fff;
+  color: #303030;
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
   border-radius: 50%;
   text-align: center;
-  width: 36px;
-  height: 36px;
+  width: 70px;
+  height: 70px;
   transition: 0.3s;
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #209dd8;
-  color: #fff;
+  background: #cccccc;
   text-decoration: none;
 }
 
@@ -1873,10 +1883,15 @@ section {
 .market {
   background: rgb(115, 115, 115);
 }
+.market .btn {
+  border-radius: 30px;
+  padding: 10px 25px;
+}
 .market-container {
   margin: auto;
   width: fit-content;
   color: #000;
+  text-align: center;
 }
 .market-container .box {
   width: 100%;
@@ -2016,6 +2031,7 @@ section {
 }
 .premium {
   background: #efefef;
+  padding: 100px 0;
 }
 #why-us {
   /* background: #f3f5fa; */
