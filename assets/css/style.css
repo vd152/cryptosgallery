@@ -2011,7 +2011,7 @@ section {
   position: relative;
   text-align: center;
   color: white;
-  background-image: url("/assets/img/bitcoin-bg.jpeg");
+  background-image: url("../assets/img/bitcoin-bg.jpeg");
   background-size: cover;
   background-position: center;
   height: 60vh;
