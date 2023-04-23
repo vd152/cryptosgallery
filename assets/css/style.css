@@ -533,7 +533,7 @@ section {
 .section-title h2 {
   font-size: 52px;
   font-weight: bold;
-  /* text-transform: uppercase; */
+  /* text-transform: capitalize; */
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
@@ -602,6 +602,11 @@ section {
 .about {
   background: #f3f5fa;
 }
+#about {
+  -webkit-box-shadow: inset 0px -50px 30px 7px #37517e1d;
+  -moz-box-shadow: inset 0px -50px 30px 7px #37517e1d;
+  box-shadow: inset 0px -50px 30px 7px #37517e1d;
+}
 .about .content h3 {
   font-weight: 600;
   font-size: 26px;
@@ -632,8 +637,10 @@ section {
 
 .about .content p:last-child {
   margin-bottom: 0;
-  font-size: 1.3rem;
+  font-size: 20px;
   font-weight: 300;
+  color: #000;
+  line-height: 1.55;
 }
 
 .about .content .btn-learn-more {
@@ -665,9 +672,6 @@ section {
 /*--------------------------------------------------------------
 # Why Us
 --------------------------------------------------------------*/
-.why-us .content {
-  padding: 60px 100px 0 100px;
-}
 
 .why-us .content h3 {
   font-weight: 400;
@@ -682,8 +686,7 @@ section {
 }
 
 .why-us .content p {
-  font-size: 15px;
-  color: #848484;
+  color: #000;
 }
 
 .why-us .img {
@@ -921,7 +924,7 @@ section {
   padding: 12px 40px;
   border-radius: 50px;
   transition: 0.5s;
-  margin: 10px;
+  margin: 10px 10px 10px -50px;
   border: 2px solid #47b2e4;
   color: #000;
 }
@@ -1661,7 +1664,7 @@ section {
 }
 
 #footer .footer-newsletter h4 {
-  font-size: 24px;
+  font-size: 2.7rem;
   margin: 0 0 20px 0;
   padding: 0;
   line-height: 1;
@@ -1817,8 +1820,15 @@ section {
 #footer .credits a {
   transition: 0.3s;
 }
-
+.footer-newsletter p {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  font-weight: 300;
+}
 @media (max-width: 768px) {
+  #footer .footer-newsletter h4 {
+    font-size: 2rem;
+  }
   #footer .footer-bottom {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -1837,6 +1847,9 @@ section {
 
 .text-justify {
   text-align: justify !important;
+}
+.market {
+  background: #f3f5fa;
 }
 .market-container {
   margin: auto;
@@ -1860,8 +1873,9 @@ section {
   text-align: center;
   font-size: 40px;
   line-height: 185px;
-  height: 160px;
+  height: 170px;
   color: #000;
+  margin: auto;
 }
 
 .market-container .box canvas {
@@ -1875,8 +1889,12 @@ section {
   font-weight: 600;
   font-size: 1.3em;
   margin-top: 2em;
+  text-align: center;
 }
-
+.market-container .updated {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
 .carousel {
   width: 60%;
   margin: auto;
@@ -1896,6 +1914,9 @@ section {
   .carousel {
     width: 100%;
     margin: auto;
+  }
+  .carousel-indicators {
+    bottom: -12%;
   }
 }
 
@@ -1960,8 +1981,9 @@ section {
 }
 .why-us p {
   padding-bottom: 2rem;
-  font-size: 1.5rem;
   font-weight: 300;
+  font-size: 24px;
+  line-height: 1.5;
 }
 
 @media (max-width: 768px) {
@@ -1975,5 +1997,63 @@ section {
   background: #fff;
 }
 #premium h3 {
-  font-size: 2.5rem;
+  font-size: 2.7rem;
+}
+#premium p {
+  margin: auto;
+  max-width: 600px;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: rgb(33, 33, 33);
+}
+.bitcoin-container {
+  position: relative;
+  text-align: center;
+  color: white;
+  background-image: url("/assets/img/bitcoin-bg.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+}
+.bitcoin-overlay {
+  background-image: -webkit-linear-gradient(top, #37517edc, #37517ed3);
+  background-image: linear-gradient(top, #37517edc, #37517ed3);
+  height: 60vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.bitcoin-centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  font-size: 90px;
+  font-weight: 700;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .bitcoin-centered {
+    font-size: 60px;
+  }
+  #premium h3 {
+    font-size: 2rem;
+  }
+  #premium p {
+    font-size: 1.3rem;
+  }
+}
+
+.arrow-icon {
+  width: 55px;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  fill: #fff;
+  top: 0;
+  bottom: 0;
+  padding: 3px;
 }

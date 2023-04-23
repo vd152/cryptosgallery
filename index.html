@@ -167,7 +167,7 @@
         <div class="container" data-aos="fade-up">
           <div class="m-lg-5 about-bg p-5">
             <div class="section-title">
-              <h2>About Us</h2>
+              <h2>About us</h2>
             </div>
 
             <div class="row content justify-content-center">
@@ -185,14 +185,14 @@
         </div>
       </section>
       <!-- End About Us Section -->
-      <section id="why-us" class="about">
+      <section id="why-us" class="why-us">
         <div class="container" data-aos="fade-up">
           <div class="section-title">
-            <h2>Why Choose Us?</h2>
+            <h2>Why choose us?</h2>
           </div>
 
           <div class="row content justify-content-center">
-            <div class="col-lg-4 text-center why-us">
+            <div class="col-lg-6 text-center why-us">
               <p>
                 We work hard every day to make life of our clients better and
                 happier
@@ -302,7 +302,7 @@
         </div>
       </section>
 
-      <section id="market" class="about">
+      <section id="market" class="market">
         <div class="container" data-aos="fade-up">
           <div class="section-title">
             <h2>Market Sentiment</h2>
@@ -320,9 +320,10 @@
                     45%
                   </div>
                   <p>Long term: <span style="color: #bc3814">Bearish</span></p>
+                  <span class="updated">updated on : 20 April at $29000</span>
                 </div>
 
-                <div class="box">
+                <div class="box mt-4">
                   <div
                     class="chart chart2"
                     data-percent="70"
@@ -331,6 +332,7 @@
                     70%
                   </div>
                   <p>Short term: <span style="color: #14bc44">Bullish</span></p>
+                  <span class="updated">updated on : 20 April at $29000</span>
                 </div>
               </div>
             </div>
@@ -338,15 +340,25 @@
         </div>
       </section>
       <!-- ======= Services Section ======= -->
-      <section id="bitcoin" class="services section-bg">
-        <div class="container" data-aos="fade-up">
-          <div class="section-title">
+      <section id="bitcoin" class="services section-bg pt-0">
+        <div class="bitcoin-container">
+          <!-- <img
+            src="/assets/img/bitcoin-bg.jpeg"
+            alt="reload"
+            style="width: 100%"
+          /> -->
+
+          <div class="bitcoin-centered">BITCOIN Analysis</div>
+          <div class="bitcoin-overlay"></div>
+        </div>
+        <div class="container mt-5" data-aos="fade-up">
+          <!-- <div class="section-title">
             <h2>Bitcoin Analysis</h2>
-          </div>
+          </div> -->
 
           <div class="row">
             <div
-              class="col-xl-4 col-md-6 d-flex align-items-stretch"
+              class="col-xl-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0"
               data-aos="zoom-in"
               data-aos-delay="100"
             >
@@ -397,7 +409,7 @@
           </div>
           <div class="row mt-4" id="show-more" style="display: none">
             <div
-              class="col-xl-4 col-md-6 d-flex align-items-stretch"
+              class="col-xl-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0"
               data-aos="zoom-in"
               data-aos-delay="100"
             >
@@ -443,7 +455,7 @@
         </div>
       </section>
       <!-- End Services Section -->
-      <section id="reviews" class="about">
+      <section id="reviews" class="reviews">
         <div class="container" data-aos="fade-up">
           <div class="section-title">
             <h2>Reviews</h2>
@@ -681,12 +693,23 @@
           <div class="row">
             <div class="col-12 text-center">
               <h3>Book your Premium seat!</h3>
-              <p>
+              <p class="my-4">
                 You are one step away from becoming the CG Premium member. Just
                 fill the form, make the payement and join our VIP group.
               </p>
             </div>
             <div class="col-12 cta-btn-container text-center">
+              <svg
+                role="presentation"
+                class="arrow-icon"
+                style="fill: #212121"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 80 180"
+              >
+                <path
+                  d="M54.1 109c-.8 0-1.6-.4-2-1.1-.8-1.1-.5-2.7.6-3.5 1.3-.9 6.8-4 11.6-6.6-15.9-1.3-29.2-8.3-38.5-20.2C8.9 56 8.5 24.1 13.2 3.4c.3-1.3 1.7-2.2 3-1.9 1.3.3 2.2 1.7 1.9 3-4.5 19.6-4.2 49.8 11.6 70 9 11.5 21.5 17.7 37.2 18.4l-1.8-2.3c-1.4-1.7-2.7-3.4-4.1-5.1-.7-.9-1.5-1.9-2.3-2.9-.9-1.1-.7-2.6.4-3.5 1.1-.9 2.6-.7 3.5.4 0 0 0 .1.1.1l6.4 7.9c.5.5.9 1.1 1.4 1.7 1.5 1.8 3.1 3.6 4.4 5.6 0 .1.1.1.1.2.1.3.2.5.3.8v.6c0 .2-.1.4-.2.6-.1.1-.1.3-.2.4-.1.2-.3.4-.5.6-.1.1-.3.2-.5.3-.1 0-.1.1-.2.1-1.2.6-16 8.6-18.1 10-.5.5-1 .6-1.5.6z"
+                ></path>
+              </svg>
               <a class="cta-btn align-middle" href="#">BOOK NOW</a>
             </div>
           </div>
@@ -701,8 +724,10 @@
       <div class="footer-newsletter">
         <div class="container">
           <div class="row justify-content-center">
-            <div class="col-lg-6">
+            <div class="col-lg-12">
               <h4>Be the first to know our weekly news!</h4>
+            </div>
+            <div class="col-lg-6">
               <p>
                 Once a week you will hear about our latest features and hottest
                 news. And no spam, of course.
@@ -711,8 +736,12 @@
                 <input
                   type="email"
                   name="email"
-                  placeholder="your email"
-                /><input type="submit" value="Subscribe" />
+                  placeholder="Your Email"
+                /><input
+                  type="submit"
+                  onclick="return false"
+                  value="Subscribe"
+                />
               </form>
             </div>
           </div>
