@@ -41,6 +41,13 @@
     <link href="assets/css/style.css" rel="stylesheet" />
     <link href="assets/css/whyus.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      UPLOADCARE_PUBLIC_KEY = "4e1d343f0518d5277d6d";
+    </script>
+    <script
+      src="https://ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js"
+      charset="utf-8"
+    ></script>
   </head>
 
   <body>
@@ -142,7 +149,7 @@
                 >Join Now</a
               >
               <a
-                href="https://instagram.com/cryptosgallery?igshid=YmMyMTA2M2Y="
+                href="https://www.instagram.com/cryptosgallery/"
                 target="_blank"
                 class="btn-get-started-revert scrollto m-1"
                 >Can't Join?</a
@@ -192,7 +199,7 @@
           </div>
 
           <div class="row content justify-content-center">
-            <div class="col-lg-6 text-center why-us" >
+            <div class="col-lg-6 text-center why-us">
               <p>
                 We work hard every day to make life of our clients better and
                 happier
@@ -200,8 +207,12 @@
             </div>
           </div>
           <ul class="t920__container t-container mt-5">
-            <li data-counter="1" class="t920__row" data-aos="fade-right"
-            data-aos-delay="100">
+            <li
+              data-counter="1"
+              class="t920__row"
+              data-aos="fade-right"
+              data-aos-delay="100"
+            >
               <div class="t920__col t-col t-prefix_2 t-col_5">
                 <div class="t920__itemwrapper">
                   <div class="t920__wrapper">
@@ -233,8 +244,12 @@
               </div>
             </li>
             <div class="t-clear t920__separator" style=""></div>
-            <li data-counter="2" class="t920__row" data-aos="fade-left"
-            data-aos-delay="100">
+            <li
+              data-counter="2"
+              class="t920__row"
+              data-aos="fade-left"
+              data-aos-delay="100"
+            >
               <div class="t920__offset t-col t-col_5 t-prefix_1"></div>
               <div class="t920__col t-col t-col_5 t-prefix_1">
                 <div class="t920__itemwrapper">
@@ -267,8 +282,12 @@
               </div>
             </li>
             <div class="t-clear t920__separator" style=""></div>
-            <li data-counter="3" class="t920__row" data-aos="fade-right"
-            data-aos-delay="100">
+            <li
+              data-counter="3"
+              class="t920__row"
+              data-aos="fade-right"
+              data-aos-delay="100"
+            >
               <div class="t920__col t-col t-prefix_2 t-col_5">
                 <div class="t920__itemwrapper">
                   <div class="t920__wrapper">
@@ -322,23 +341,35 @@
                   >
                     45%
                   </div>
-                  <p>Long term: <span style="color: #bc3814">Bearish</span></p>
+                  <p>Long term: <span style="color: #af2701">Bearish</span></p>
                   <span class="updated">updated on : 20 April at $29000</span>
                 </div>
-                <button class="btn btn-primary mt-4">Analysis</button>
+                <a
+                  class="btn btn-primary mt-4"
+                  href="https://telegram.me/cryptosgallery/4446"
+                  target="_blank"
+                  >Analysis</a
+                >
 
                 <div class="box mt-4">
                   <div
                     class="chart chart2"
-                    data-percent="70"
+                    data-percent="80"
                     data-scale-color="#ffb400"
                   >
-                    70%
+                    80%
                   </div>
-                  <p>Short term: <span style="color: #14bc44">Bullish</span></p>
+                  <!-- #14bc44 -> green
+                  #af2701 -> red -->
+                  <p>Short term: <span style="color: #af2701">Bearish</span></p>
                   <span class="updated">updated on : 20 April at $29000</span>
                 </div>
-                <button class="btn btn-primary mt-4">Analysis</button>
+                <a
+                  class="btn btn-primary mt-4"
+                  href="https://telegram.me/cryptosgallery/4536"
+                  target="_blank"
+                  >Analysis</a
+                >
               </div>
             </div>
           </div>
@@ -465,8 +496,7 @@
       </section>
       <!-- End Services Section -->
       <section id="reviews" class="reviews">
-        <div class="container" data-aos="fade-up"
-        data-aos-delay="200">
+        <div class="container" data-aos="fade-up" data-aos-delay="200">
           <div class="section-title">
             <h2>Reviews</h2>
           </div>
@@ -476,7 +506,7 @@
           class="carousel slide carousel-dark"
           data-bs-ride="carousel"
           data-aos="fade-up"
-            data-aos-delay="200"
+          data-aos-delay="200"
         >
           <div class="carousel-indicators">
             <button
@@ -722,7 +752,13 @@
                   d="M54.1 109c-.8 0-1.6-.4-2-1.1-.8-1.1-.5-2.7.6-3.5 1.3-.9 6.8-4 11.6-6.6-15.9-1.3-29.2-8.3-38.5-20.2C8.9 56 8.5 24.1 13.2 3.4c.3-1.3 1.7-2.2 3-1.9 1.3.3 2.2 1.7 1.9 3-4.5 19.6-4.2 49.8 11.6 70 9 11.5 21.5 17.7 37.2 18.4l-1.8-2.3c-1.4-1.7-2.7-3.4-4.1-5.1-.7-.9-1.5-1.9-2.3-2.9-.9-1.1-.7-2.6.4-3.5 1.1-.9 2.6-.7 3.5.4 0 0 0 .1.1.1l6.4 7.9c.5.5.9 1.1 1.4 1.7 1.5 1.8 3.1 3.6 4.4 5.6 0 .1.1.1.1.2.1.3.2.5.3.8v.6c0 .2-.1.4-.2.6-.1.1-.1.3-.2.4-.1.2-.3.4-.5.6-.1.1-.3.2-.5.3-.1 0-.1.1-.2.1-1.2.6-16 8.6-18.1 10-.5.5-1 .6-1.5.6z"
                 ></path>
               </svg>
-              <a class="cta-btn align-middle" href="#">BOOK NOW</a>
+              <button
+                class="cta-btn align-middle"
+                data-bs-toggle="modal"
+                data-bs-target="#join-now"
+              >
+                BOOK NOW
+              </button>
             </div>
           </div>
         </div>
@@ -733,8 +769,7 @@
 
     <!-- ======= Footer ======= -->
     <footer id="footer">
-      <div class="footer-newsletter" data-aos="zoom-in"
-      >
+      <div class="footer-newsletter" data-aos="zoom-in">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-12 py-3">
@@ -745,16 +780,14 @@
                 Once a week you will hear about our latest features and hottest
                 news. And no spam, of course.
               </p>
-              <form action="" method="post">
+              <form action="https://formspree.io/f/xvondlzk" method="POST">
                 <input
                   type="email"
                   name="email"
                   placeholder="Your Email"
-                /><input
-                  type="submit"
-                  onclick="return false"
-                  value="Subscribe"
-                />
+                /><button type="submit" class="newsletter-btn">
+                  Subscribe
+                </button>
               </form>
             </div>
           </div>
@@ -799,7 +832,7 @@
                 </div>
               </div>
               <div class="col-12 text-center">
-                <span>Email us: cryptosgallery@gmail.com</p>
+                <span>Email us: cryptosgallery@gmail.com</span>
               </div>
             </div>
           </div>
@@ -815,7 +848,160 @@
       </div>
     </footer>
     <!-- End Footer -->
+    <div
+      class="modal fade"
+      id="join-now"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Book now</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form
+              action="https://formspree.io/f/mqkowwro"
+              method="POST"
+              enctype="multipart/form-data"
+            >
+              <div class="mb-3">
+                <label class="form-label"
+                  >What is your trading experience?</label
+                >
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="experience"
+                    id="flexRadioDefault1"
+                    value="No experience"
+                    checked
+                  />
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    No Experience
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="experience"
+                    id="flexRadioDefault2"
+                    value="Beginner"
+                  />
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    Beginer
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="experience"
+                    id="flexRadioDefault3"
+                    value="Professional"
+                  />
+                  <label class="form-check-label" for="flexRadioDefault3">
+                    Professional
+                  </label>
+                </div>
+              </div>
 
+              <div class="mb-3">
+                <label class="form-label"
+                  >What is your trading capital ($)?</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  name="trading capital"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Membership type?</label>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="membership"
+                    id="flexDefault1"
+                    value="1 Month: $49.99"
+                    checked
+                  />
+                  <label class="form-check-label" for="flexDefault1">
+                    1 Month: $49.99
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="experience"
+                    id="RadioDefault2"
+                    value="3 Months: $79.99"
+                  />
+                  <label class="form-check-label" for="RadioDefault2">
+                    3 Months: $79.99
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="experience"
+                    id="Default3"
+                    value="12 Months: $199.99"
+                  />
+                  <label class="form-check-label" for=" Default3">
+                    12 Months: $199.99
+                  </label>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Full Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Full Name"
+                  name="name"
+                  required
+                />
+              </div>
+              <div>
+                <p>Make the payment and upload screenshot below.</p>
+                <p><b>USDT TRC20</b></p>
+                <p>TWeYSzVRPszuNsyqFXaC4ZEDpq2LvEDmGM</p>
+                <p><b>Binanace pay id</b></p>
+                <p>200238176</p>
+              </div>
+
+              <input
+                type="hidden"
+                role="uploadcare-uploader"
+                name="screenshot"
+                data-public-key="4e1d343f0518d5277d6d"
+                data-tabs="file camera url facebook gdrive gphotos"
+              />
+              <div class="text-center">
+                <button type="submit" class="btn join-btn cta-btn">
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     <div id="preloader"></div>
     <a
       href="#"
@@ -835,7 +1021,7 @@
       $(function () {
         $(".chart1").easyPieChart({
           size: 170,
-          barColor: "#bc3814",
+          barColor: "#af2701",
           scaleLength: 0,
           lineWidth: 15,
           trackColor: "#fff",
@@ -844,7 +1030,7 @@
         });
         $(".chart2").easyPieChart({
           size: 170,
-          barColor: "#14bc44",
+          barColor: "#af2701",
           scaleLength: 0,
           lineWidth: 15,
           trackColor: "#fff",
@@ -852,6 +1038,17 @@
           animate: 2000,
         });
       });
+    </script>
+    <script>
+      UPLOADCARE_LOCALE_TRANSLATIONS = {
+        buttons: {
+          choose: {
+            files: {
+              one: "Upload",
+            },
+          },
+        },
+      };
     </script>
     <script>
       function showDiv() {
