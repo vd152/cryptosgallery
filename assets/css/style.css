@@ -2065,7 +2065,7 @@ section {
 #why-us {
   /* background: #f3f5fa; */
   background: #fff;
-  padding: 40px 0;
+  padding: 60px 0;
 }
 .premium h3 {
   font-size: 2.7rem;
@@ -2136,6 +2136,9 @@ section {
 }
 
 @media (max-width: 768px) {
+  #why-us {
+    padding: 40px 0;
+  }
   .bitcoin-centered {
     font-size: 40px;
   }
