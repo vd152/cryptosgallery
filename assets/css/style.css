@@ -384,7 +384,7 @@ h6 {
   height: 80vh;
   background: #000;
   background-image: url("../img/hero-bg.jpeg");
-  background-position: center;
+  background-position: 0% 40%;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -474,7 +474,7 @@ h6 {
 
 @media (max-width: 991px) {
   #hero {
-    height: 100vh;
+    height: 98vh;
     text-align: center;
     background-position: top;
   }
@@ -499,7 +499,7 @@ h6 {
   }
 
   #hero h2 {
-    font-size: 18px;
+    font-size: 34px;
     line-height: 24px;
     margin-bottom: 30px;
   }
@@ -516,8 +516,8 @@ h6 {
 
   #hero .btn-get-started,
   #hero .btn-get-started-revert {
-    font-size: 13px;
-    padding: 10px 24px 11px 24px;
+    font-size: 14px;
+    padding: 15px 24px 15px 24px;
   }
 }
 @media (max-width: 400px) {
@@ -527,8 +527,8 @@ h6 {
 
   #hero .btn-get-started,
   #hero .btn-get-started-revert {
-    font-size: 0.8rem;
-    padding: 10px 14px 11px 14px;
+    font-size: 0.9rem;
+    padding: 13px 14px 13px 14px;
   }
 }
 
@@ -2085,7 +2085,12 @@ section {
 .premium h3 {
   font-size: 2.7rem;
 }
-.premium .cta-btn {
+#market .cta-btn {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.premium .cta-btn,
+#market .cta-btn {
   background-color: #1f5bff;
   border: none;
   color: #fff;
@@ -2102,7 +2107,8 @@ section {
   background-color: #2f2f2f;
   color: #fff;
 }
-.premium .cta-btn:hover {
+.premium .cta-btn:hover,
+#market .cta-btn:hover {
   background-color: #1f5bffbf;
 }
 .premium p {
@@ -2145,7 +2151,7 @@ section {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 5;
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 700;
   width: 100%;
 }
@@ -2155,13 +2161,16 @@ section {
     padding: 40px 0;
   }
   .bitcoin-centered {
-    font-size: 40px;
+    font-size: 32px;
   }
   .premium h3 {
     font-size: 1.8rem;
   }
   .premium p {
     font-size: 1.1rem;
+  }
+  .bitcoin-container {
+    background-image: url("../img/bitcoin-bg-mobile.jpeg");
   }
   .bitcoin-container,
   .bitcoin-overlay {
