@@ -1,6 +1,72 @@
 (function () {
   "use strict";
 
+  var longTermPercent = "45";
+  var shortTermPercent = "80";
+  var longTermText = "Bearish";
+  var shortTermText = "Bearish";
+  var longTermLink = "https://telegram.me/cryptosgallery/4446";
+  var shortTermLink = "https://telegram.me/cryptosgallery/4536";
+
+  document.getElementById("long-term-percent").innerHTML =
+    longTermPercent + "%";
+  document
+    .getElementById("long-term-percent")
+    .setAttribute("data-percent", longTermPercent);
+  document
+    .getElementById("short-term-percent")
+    .setAttribute("data-percent", shortTermPercent);
+  document.getElementById("short-term-percent").innerHTML =
+    shortTermPercent + "%";
+  document.getElementById("long-term-text").innerHTML = longTermText;
+  document.getElementById("short-term-text").innerHTML = shortTermText;
+
+  document.getElementById("long-term-link").href = longTermLink;
+  document.getElementById("short-term-link").href = shortTermLink;
+
+  document.getElementById("long-term-text").style.color =
+    longTermText == "Bearish"
+      ? "#af2701"
+      : longTermText == "Neutral"
+      ? "#1f5bff"
+      : "#14bc44";
+
+  document.getElementById("short-term-text").style.color =
+    shortTermText == "Bearish"
+      ? "#af2701"
+      : shortTermText == "Neutral"
+      ? "#1f5bff"
+      : "#14bc44";
+
+  $(".chart1").easyPieChart({
+    size: 170,
+    barColor:
+      longTermText == "Bearish"
+        ? "#af2701"
+        : longTermText == "Neutral"
+        ? "#1f5bff"
+        : "#14bc44",
+    scaleLength: 0,
+    lineWidth: 15,
+    trackColor: "#fff",
+    lineCap: "circle",
+    animate: 2000,
+  });
+  $(".chart2").easyPieChart({
+    size: 170,
+    barColor:
+      shortTermText == "Bearish"
+        ? "#af2701"
+        : shortTermText == "Neutral"
+        ? "#1f5bff"
+        : "#14bc44",
+    scaleLength: 0,
+    lineWidth: 15,
+    trackColor: "#fff",
+    lineCap: "circle",
+    animate: 2000,
+  });
+
   /**
    * Easy selector helper function
    */

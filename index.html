@@ -340,16 +340,23 @@
                     class="chart chart1"
                     data-percent="45"
                     data-scale-color="#aa0e0e"
+                    id="long-term-percent"
                   >
                     45%
                   </div>
-                  <p>Long term: <span style="color: #af2701">Bearish</span></p>
+                  <p>
+                    Long term:
+                    <span id="long-term-text" style="color: #af2701"
+                      >Bearish</span
+                    >
+                  </p>
                   <span class="updated">updated on : 20 April at $29000</span>
                 </div>
                 <a
                   class="cta-btn mt-4"
                   href="https://telegram.me/cryptosgallery/4446"
                   target="_blank"
+                  id="long-term-link"
                   >Analysis</a
                 >
 
@@ -358,18 +365,25 @@
                     class="chart chart2"
                     data-percent="80"
                     data-scale-color="#ffb400"
+                    id="short-term-percent"
                   >
                     80%
                   </div>
                   <!-- #14bc44 -> green
                   #af2701 -> red -->
-                  <p>Short term: <span style="color: #af2701">Bearish</span></p>
+                  <p>
+                    Short term:
+                    <span id="short-term-text" style="color: #af2701"
+                      >Bearish</span
+                    >
+                  </p>
                   <span class="updated">updated on : 20 April at $29000</span>
                 </div>
                 <a
                   class="cta-btn mt-4"
                   href="https://telegram.me/cryptosgallery/4536"
                   target="_blank"
+                  id="short-term-link"
                   >Analysis</a
                 >
               </div>
@@ -1017,28 +1031,9 @@
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js"></script>
-    <script>
-      $(function () {
-        $(".chart1").easyPieChart({
-          size: 170,
-          barColor: "#af2701",
-          scaleLength: 0,
-          lineWidth: 15,
-          trackColor: "#fff",
-          lineCap: "circle",
-          animate: 2000,
-        });
-        $(".chart2").easyPieChart({
-          size: 170,
-          barColor: "#af2701",
-          scaleLength: 0,
-          lineWidth: 15,
-          trackColor: "#fff",
-          lineCap: "circle",
-          animate: 2000,
-        });
-      });
-    </script>
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
     <script>
       UPLOADCARE_LOCALE_TRANSLATIONS = {
         buttons: {
@@ -1056,8 +1051,5 @@
         document.getElementById("show-more-btn").style.display = "none";
       }
     </script>
-
-    <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
   </body>
 </html>

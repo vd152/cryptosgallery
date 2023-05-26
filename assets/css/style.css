@@ -1948,7 +1948,7 @@ section {
 
 .market-container .box .chart {
   position: relative;
-  width: 100%;
+  width: 170px;
   height: 100%;
   text-align: center;
   font-size: 30px;
@@ -1963,7 +1963,7 @@ section {
   top: 0;
   left: 0;
   width: 100%;
-  width: 100%;
+  height: 100%;
 }
 .market-container p {
   font-weight: 600;
