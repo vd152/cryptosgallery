@@ -6,7 +6,7 @@
   var longTermText = "Bearish";
   var shortTermText = "Bearish";
   var longTermLink = "https://telegram.me/cryptosgallery/4446";
-  var shortTermLink = "https://telegram.me/cryptosgallery/4536";
+  var shortTermLink = "https://telegram.me/c/1529605664/4211";
 
   document.getElementById("long-term-percent").innerHTML =
     longTermPercent + "%";
